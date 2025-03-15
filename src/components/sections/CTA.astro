@@ -3,6 +3,7 @@ import Button from "../shared/Button.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import Services from "./Services.astro";
+import BtnLink from "../shared/BtnLink.astro";
 ---
 
 <section  id="cta" class="pb-20">
@@ -42,15 +43,18 @@ import Services from "./Services.astro";
           class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight
           font-bold text-heading-1"
         >
-        Looking for work ? <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Apply Now</span> 
+        <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Looking for work ? Apply Now</span> 
         </h1>
-        <Paragraph className={"pt-10"}>
+        <Paragraph className={"pt-10 "}>
+                <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
           Join our team of qualified excellent proffesionals offering quality healthcare service to our valued clients. 
+                
+                </span> 
+
         </Paragraph>
-        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
-          <Button variant={"primary"}>
-            <span class="text-white relative z-[5]">Apply Now<pan>
-          </Button>
+        <div class="flex  mx-auto max-w-md sm:max-w-xl pt-10">
+        <BtnLink text="Apply Now" href="https://signup-emp.vercel.app/" className="justify-center w-full sm:w-max" variant="primary"/>
+          
         </div>
         
       </div>
